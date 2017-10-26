@@ -6,6 +6,8 @@ Sass, Babel &amp; Bootstrap boilerplate with Webpack building,Dev Server and Liv
 * Babel ES6 Compiler
 * Sass Compiler
 * Bootstrap v4 Beta
+* jQuery 3.2.1
+* Popper.js 
 * Webpack Dev Server
 
 ## Webpack Loaders
