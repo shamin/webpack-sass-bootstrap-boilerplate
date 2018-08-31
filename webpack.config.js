@@ -1,13 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack');
 const path = require('path');
 
-module.exports = {
-    entry: {
-        app: './src/index.js',
-    },
+module.exports =  (env, options) => ({
+    entry: [
+        './src/index.js'
+    ],
     devServer: {
         contentBase: './dist'
     },
@@ -16,19 +16,7 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [{
-                        loader: "css-loader", options: {
-                            sourceMap: true
-                        }
-                    }, {
-                        loader: "sass-loader", options: {
-                            sourceMap: true
-                        }
-                    }],
-                    publicPath: '../',
-                })
+                use: [options.mode !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpg|gif)$/,
@@ -62,7 +50,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin({
+        new MiniCssExtractPlugin({
             filename: "css/[name].[contenthash].css",
         }),
         new CleanWebpackPlugin(['dist']),
@@ -85,4 +73,4 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         publicPath: ''
     }
-}
+})
