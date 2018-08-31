@@ -2,11 +2,11 @@
 Sass, Babel &amp; Bootstrap boilerplate with Webpack building,Dev Server and Live Loading
 
 ## Features
-* Webpack building
+* Webpack 4 bundling
 * Babel ES6 Compiler
 * Sass Compiler
 * Bootstrap v4
-* jQuery 3.2.1
+* jQuery 3.3.1
 * Popper.js 
 * Webpack Dev Server
 
