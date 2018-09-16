@@ -22,6 +22,9 @@ Sass, Babel &amp; Bootstrap boilerplate with Webpack building,Dev Server and Liv
 * Html Webpack Plugin for generating html files
 * Webpack Provider Plugin for providing jquery & popper js to bootstrap
 
+# Requirements
+* Please make sure you have node js installed
+
 # Quick start
 
 Clone the repo
