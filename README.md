@@ -1,5 +1,7 @@
 # webpack-sass-bootstrap-boilerplate
 
+Sass, Babel & Bootstrap boilerplate with Webpack building, a Dev Server and Live Loading
+
 This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
 to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.
 
