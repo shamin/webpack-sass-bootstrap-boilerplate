@@ -1,7 +1,7 @@
 # webpack-sass-bootstrap-boilerplate
 
-This webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
-to get started quickly with weback building, Live Loading, and creating a dev server.
+This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
+to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.
 
 It contains the following features:
 
@@ -29,7 +29,7 @@ The following webpack plugins are also included:
 * Extract Text Plugin for extracting CSS files
 * Clean Webpack Plugin for cleaning unwanted files in dist directory
 * HTML Webpack Plugin for generating HTML files
-* Webpack Provider Plugin for providing jQuery & popper js to bootstrap
+* Webpack Provider Plugin for providing jQuery & popper js to Bootstrap
 
 ## Getting Started
 
