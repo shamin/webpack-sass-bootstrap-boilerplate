@@ -15,8 +15,10 @@ It contains the following features:
 - Popper.js 
 - Webpack Dev Server
 
-### Check Out Our Documentation
-If you want to check out our official documentation, just click [here](https://shaminmeerankutty.github.io/webpack-sass-bootstrap-boilerplate/).
+## Check Out Our Documentation
+If you want to check out our official documentation, just click [here](https://shaminmeerankutty.github.io/webpack-sass-bootstrap-boilerplate/). 
+
+It contains guidance on setting up this starter, as well as feature outlines.
 
 ## Features
 
