@@ -1,4 +1,4 @@
-# Webpack Sass Bootstrap Starter
+# webpack-sass-bootstrap-boilerplate
 
 This webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
 to get started quickly with weback building, Live Loading, and creating a dev server.
