@@ -1,73 +1,92 @@
 # webpack-sass-bootstrap-boilerplate
-Sass, Babel &amp; Bootstrap boilerplate with Webpack building,Dev Server and Live Loading
+
+Sass, Babel & Bootstrap boilerplate with Webpack building, a Dev Server and Live Loading
+
+This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
+to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.
+
+It contains the following features:
+
+- Webpack 4 bundling
+- Babel ES6 Compiler
+- Sass Compiler
+- Bootstrap v4
+- jQuery 3.3.1
+- Popper.js 
+- Webpack Dev Server
 
 ## Features
-* Webpack 4 bundling
-* Babel ES6 Compiler
-* Sass Compiler
-* Bootstrap v4
-* jQuery 3.3.1
-* Popper.js 
-* Webpack Dev Server
 
-## Webpack Loaders
-* Sass Loader for compiling sass
+### Webpack Loaders
+This starter contains the following webpack loaders:
+
+* Sass Loader for compiling sass (SCSS)
 * File Loader for loading asset files
-* Html Loader for loading html files
+* HTML Loader for loading HTML files
 * Babel Loader for compiling ES6 code
 
-## Webpack Plugins 
-* Extract Text Plugin for extracting css files
+### Webpack Plugins 
+The following webpack plugins are also included:
+
+* Extract Text Plugin for extracting CSS files
 * Clean Webpack Plugin for cleaning unwanted files in dist directory
-* Html Webpack Plugin for generating html files
-* Webpack Provider Plugin for providing jquery & popper js to bootstrap
+* HTML Webpack Plugin for generating HTML files
+* Webpack Provider Plugin for providing jQuery & popper js to Bootstrap
 
-# Requirements
-* Please make sure you have node js installed
+## Getting Started
 
-# Quick start
+### Requirements
+* Please make sure you have NodeJS installed, as this contains `npm`, which is necessary
+for installing dependencies, starting the appropriate scripts, and building your web project.
 
-Clone the repo
+### Quick Start
+Clone the repo:
 
     git clone https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate.git
 
-Install All Packages
+Navigate to the project folder:
+
+    cd webpack-sass-bootstrap-boilerplate
+
+Install all packages and dependencies required for this project:
 
     npm install
     
-Starting Developement Environment (Check the browser at http://localhost:8080/)
+Start the development environment (then, navigate to http://localhost:8080):
 
     npm start
+ 
+Then, open a browser and navigate to: http://localhost:8080/ 
     
-Building files
+Building files can be done as follows:
 
     npm run build
 
-# How to use
-* Add your html files in the `src` directory (By default `index.html` is added to your `src` directory, feel free to edit it)
-  * Make sure you add it in your `webpack.config.js` (Replace `name` with your `filename`)
-  
-    ```javascript
-    plugins: [
-        ...
-        new HtmlWebpackPlugin({
-            template: 'src/name.html',
-            inject: 'body',
-            filename: 'name.html'
-        }),
-        ...
-    ],
-    ```
+### How To Use
+* Add your HTML files by inserting or including them in the `src` directory (By default `index.html` is added to your `src` directory, feel free to edit it and 
+experiment with the changes live.)
+  * Make sure you add it in your `webpack.config.js` as follows: 
+  (Replace `name` with your `filename`)
 
-* Add images to your `src/assets` folder
-* Add sass files to `src/scss` folder 
+```javascript
+plugins: [
+    ...
+        new HtmlWebpackPlugin({
+        template: 'src/name.html',
+        inject: 'body',
+        filename: 'name.html'
+        }),
+    ...
+],
+```
+
+* Add images to your `src/assets` folder.
+* Add sass (SCSS) files to `src/scss` folder.
   * Make sure you import the scss file in `main.scss` 
     
-    ```sass
+```sass
     @import "filename";
-    ```
+```
 
 # Licence
-Code released under the [MIT License](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md)
-
-
+Code released under the [MIT License](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md).
