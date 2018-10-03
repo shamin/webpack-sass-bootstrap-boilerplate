@@ -1,9 +1,7 @@
-# webpack-sass-bootstrap-boilerplate
+# Webpack Sass Bootstrap Starter
 
-Sass, Babel & Bootstrap boilerplate with Webpack building, a Dev Server and Live Loading
-
-This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
-to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.
+This webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
+to get started quickly with weback building, Live Loading, and creating a dev server.
 
 It contains the following features:
 
@@ -14,11 +12,6 @@ It contains the following features:
 - jQuery 3.3.1
 - Popper.js 
 - Webpack Dev Server
-
-## Check Out Our Documentation
-If you want to check out our official documentation, just click [here](https://shaminmeerankutty.github.io/webpack-sass-bootstrap-boilerplate/). 
-
-It contains guidance on setting up this starter, as well as feature outlines.
 
 ## Features
 
@@ -36,7 +29,7 @@ The following webpack plugins are also included:
 * Extract Text Plugin for extracting CSS files
 * Clean Webpack Plugin for cleaning unwanted files in dist directory
 * HTML Webpack Plugin for generating HTML files
-* Webpack Provider Plugin for providing jQuery & popper js to Bootstrap
+* Webpack Provider Plugin for providing jQuery & popper js to bootstrap
 
 ## Getting Started
 
@@ -92,6 +85,11 @@ plugins: [
 ```sass
     @import "filename";
 ```
+
+## Official GitHub Repository
+To view this starter's official GitHub repository and source code, just click [here](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate). 
+
+We're always open to pull requests and issues, so don't hesitate to open PRs or issues. 
 
 # Licence
 Code released under the [MIT License](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md).
