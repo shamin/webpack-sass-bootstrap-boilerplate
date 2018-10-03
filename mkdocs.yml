@@ -1,0 +1,7 @@
+site_name: Webpack Sass Bootstrap Starter
+highlightjs: true
+site_url: https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate
+repo_url: https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate
+nav:
+  - Home: index.md
+  - View on GitHub: https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate
