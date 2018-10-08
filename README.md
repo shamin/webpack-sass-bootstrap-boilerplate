@@ -1,5 +1,12 @@
 # webpack-sass-bootstrap-boilerplate
 
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md)
+[![GitHub](https://img.shields.io/badge/webpack-v4.17.1-0072b8.svg)](https://webpack.js.org)
+[![GitHub](https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg)](http://getbootstrap.com/)
+[![GitHub](https://img.shields.io/badge/node--sass-v4.9.3-df5a9c.svg)](https://sass-lang.com)
+[![GitHub](https://img.shields.io/badge/webpack--dev--server-v3.1.7-71c7eb.svg)](https://sass-lang.com)
+
+
 Sass, Babel & Bootstrap boilerplate with Webpack building, a Dev Server and Live Loading
 
 This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
