@@ -1,13 +1,32 @@
-# webpack-sass-bootstrap-boilerplate
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md)
-[![GitHub](https://img.shields.io/badge/webpack-v4.17.1-0072b8.svg)](https://webpack.js.org)
-[![GitHub](https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg)](http://getbootstrap.com/)
-[![GitHub](https://img.shields.io/badge/node--sass-v4.9.3-df5a9c.svg)](https://sass-lang.com)
-[![GitHub](https://img.shields.io/badge/webpack--dev--server-v3.1.7-71c7eb.svg)](https://sass-lang.com)
+<h2 align="center">webpack-sass-bootstrap-boilerplate</h2>
 
+<p align="center">
+  <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
+    <img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+  <a href="https://webpack.js.org">
+    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.17.1-0072b8.svg"></a>
+  <a href="http://getbootstrap.com/">
+    <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg"></a>
+  <a href="https://sass-lang.com">
+    <img alt="Sass" src="https://img.shields.io/badge/node--sass-v4.9.3-df5a9c.svg"></a>
+  <a href="https://jquery.com/">
+    <img alt="jQuery" src="https://img.shields.io/badge/jquery-v4.9.3-ffa200.svg"></a>
+  <a href="">
+    <img alt="Webpack Dev Server" src="https://img.shields.io/badge/webpack--dev--server-live--reloading-orange.svg"></a>
+</p>
 
-Sass, Babel & Bootstrap boilerplate with Webpack building, a Dev Server and Live Loading
+<p align="center">
+  <em>
+  Sass
+  · Babel
+  · Bootstrap
+  · Webpack
+  · Webpack Dev Server
+  · jQuery 3.3.1
+  · Popper.js 
+  </em>
+</p>
 
 This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
 to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.
