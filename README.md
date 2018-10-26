@@ -5,13 +5,13 @@
   <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
     <img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
   <a href="https://webpack.js.org">
-    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.17.1-0072b8.svg"></a>
+    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.23.1-0072b8.svg"></a>
   <a href="http://getbootstrap.com/">
     <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg"></a>
   <a href="https://sass-lang.com">
-    <img alt="Sass" src="https://img.shields.io/badge/node--sass-v4.9.3-df5a9c.svg"></a>
+    <img alt="Sass" src="https://img.shields.io/badge/node--sass-v4.9.4-df5a9c.svg"></a>
   <a href="https://jquery.com/">
-    <img alt="jQuery" src="https://img.shields.io/badge/jquery-v4.9.3-ffa200.svg"></a>
+    <img alt="jQuery" src="https://img.shields.io/badge/jquery-v3.3.1-ffa200.svg"></a>
   <a href="">
     <img alt="Webpack Dev Server" src="https://img.shields.io/badge/webpack--dev--server-live--reloading-orange.svg"></a>
 </p>
@@ -63,6 +63,7 @@ The following webpack plugins are also included:
 * Clean Webpack Plugin for cleaning unwanted files in dist directory
 * HTML Webpack Plugin for generating HTML files
 * Webpack Provider Plugin for providing jQuery & popper js to Bootstrap
+* Glob for matching HTML files
 
 ## Getting Started
 
@@ -96,20 +97,8 @@ Building files can be done as follows:
 ### How To Use
 * Add your HTML files by inserting or including them in the `src` directory (By default `index.html` is added to your `src` directory, feel free to edit it and 
 experiment with the changes live.)
-  * Make sure you add it in your `webpack.config.js` as follows: 
-  (Replace `name` with your `filename`)
-
-```javascript
-plugins: [
-    ...
-        new HtmlWebpackPlugin({
-        template: 'src/name.html',
-        inject: 'body',
-        filename: 'name.html'
-        }),
-    ...
-],
-```
+    
+    * Make sure you restart development server after adding new HTML files
 
 * Add images to your `src/assets` folder.
 * Add sass (SCSS) files to `src/scss` folder.

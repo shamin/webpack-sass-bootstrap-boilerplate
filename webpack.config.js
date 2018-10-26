@@ -3,6 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack');
 const path = require('path');
+const globSync = require('glob').sync;
 
 module.exports =  (env, options) => ({
     entry: [
@@ -53,11 +54,13 @@ module.exports =  (env, options) => ({
         new MiniCssExtractPlugin({
             filename: "css/[name].[contenthash].css",
         }),
-        new CleanWebpackPlugin(['dist']),
-        new HtmlWebpackPlugin({
-            template: 'src/index.html',
-            inject: 'body',
-            filename: 'index.html'
+        new CleanWebpackPlugin(["dist"]),
+        ...globSync('src/**/*.html').map((fileName) => {
+            return new HtmlWebpackPlugin({
+                template: fileName,
+                inject: "body",
+                filename: fileName.replace('src/', '')
+            })
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
