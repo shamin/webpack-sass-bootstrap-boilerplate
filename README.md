@@ -63,6 +63,7 @@ The following webpack plugins are also included:
 * Clean Webpack Plugin for cleaning unwanted files in dist directory
 * HTML Webpack Plugin for generating HTML files
 * Webpack Provider Plugin for providing jQuery & popper js to Bootstrap
+* Glob for matching HTML files
 
 ## Getting Started
 
@@ -96,20 +97,8 @@ Building files can be done as follows:
 ### How To Use
 * Add your HTML files by inserting or including them in the `src` directory (By default `index.html` is added to your `src` directory, feel free to edit it and 
 experiment with the changes live.)
-  * Make sure you add it in your `webpack.config.js` as follows: 
-  (Replace `name` with your `filename`)
-
-```javascript
-plugins: [
-    ...
-        new HtmlWebpackPlugin({
-        template: 'src/name.html',
-        inject: 'body',
-        filename: 'name.html'
-        }),
-    ...
-],
-```
+    
+    * Make sure you restart development server after adding new HTML files
 
 * Add images to your `src/assets` folder.
 * Add sass (SCSS) files to `src/scss` folder.
