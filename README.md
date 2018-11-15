@@ -5,11 +5,11 @@
   <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
     <img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
   <a href="https://webpack.js.org">
-    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.23.1-0072b8.svg"></a>
+    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.25.1-0072b8.svg"></a>
   <a href="http://getbootstrap.com/">
     <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg"></a>
   <a href="https://sass-lang.com">
-    <img alt="Sass" src="https://img.shields.io/badge/node--sass-v4.9.4-df5a9c.svg"></a>
+    <img alt="Sass" src="https://img.shields.io/badge/node--sass-v4.10.0-df5a9c.svg"></a>
   <a href="https://jquery.com/">
     <img alt="jQuery" src="https://img.shields.io/badge/jquery-v3.3.1-ffa200.svg"></a>
   <a href="">
@@ -109,4 +109,4 @@ experiment with the changes live.)
 ```
 
 # Licence
-Code released under the [MIT License](https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md).
+Code released under the [MIT License](LICENSE.md).
