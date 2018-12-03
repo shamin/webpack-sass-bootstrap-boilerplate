@@ -29,7 +29,7 @@
 </p>
 
 This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
-to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.
+to get started quickly with Webpack bundling and building, Live Loading,gzip-compression and creating a dev server.
 
 It contains the following features:
 
@@ -40,6 +40,8 @@ It contains the following features:
 - jQuery 3.3.1
 - Popper.js 
 - Webpack Dev Server
+- Generates `gzip` of both css and js files  
+
 
 ## Check Out Our Documentation
 If you want to check out our official documentation, just click [here](https://shaminmeerankutty.github.io/webpack-sass-bootstrap-boilerplate/). 
