@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="None">
         
-        
+        <link rel="canonical" href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>Webpack Sass Bootstrap Starter</title>
         <link href="css/bootstrap-custom.min.css" rel="stylesheet">
@@ -32,11 +32,27 @@
 
                 <!-- Collapsed navigation -->
                 <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href=".">Webpack Sass Bootstrap Starter</a>
                 </div>
 
                 <!-- Expanded navigation -->
                 <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Home</a>
+                            </li>
+                            <li >
+                                <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate">View on GitHub</a>
+                            </li>
+                        </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -44,6 +60,9 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li>
+                                <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/edit/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -55,14 +74,14 @@
         <li class="main active"><a href="#webpack-sass-bootstrap-starter">Webpack Sass Bootstrap Starter</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#official-github-repository">Official GitHub Repository</a></li>
         <li class="main "><a href="#licence">Licence</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h1 id="webpack-sass-bootstrap-starter">Webpack Sass Bootstrap Starter</h1>
-<p>This webpack Sass Bootstrap boilerplate starter contains the features and scripts you need
-to get started quickly with weback building, Live Loading, and creating a dev server.</p>
+<p>This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.</p>
 <p>It contains the following features:</p>
 <ul>
 <li>Webpack 4 bundling</li>
@@ -88,7 +107,8 @@ to get started quickly with weback building, Live Loading, and creating a dev se
 <li>Extract Text Plugin for extracting CSS files</li>
 <li>Clean Webpack Plugin for cleaning unwanted files in dist directory</li>
 <li>HTML Webpack Plugin for generating HTML files</li>
-<li>Webpack Provider Plugin for providing jQuery &amp; popper js to bootstrap</li>
+<li>Webpack Provider Plugin for providing jQuery &amp; popper js to Bootstrap</li>
+<li>Glob for matching HTML files</li>
 </ul>
 <h2 id="getting-started">Getting Started</h2>
 <h3 id="requirements">Requirements</h3>
@@ -113,32 +133,27 @@ for installing dependencies, starting the appropriate scripts, and building your
 <p>Building files can be done as follows:</p>
 <pre><code>npm run build
 </code></pre>
-<h3 id="how-to-use">How to use</h3>
+<h3 id="how-to-use">How To Use</h3>
 <ul>
-<li>Add your HTML files by inserting or including them in the <code>src</code> directory (By default <code>index.html</code> is added to your <code>src</code> directory, feel free to edit it and 
-experiment with the changes live.)</li>
-<li>Make sure you add it in your <code>webpack.config.js</code> as follows: 
-  (Replace <code>name</code> with your <code>filename</code>)</li>
+<li>
+<p>Add your HTML files by inserting or including them in the <code>src</code> directory (By default <code>index.html</code> is added to your <code>src</code> directory, feel free to edit it and 
+experiment with the changes live.)</p>
+<ul>
+<li>Make sure you restart development server after adding new HTML files</li>
 </ul>
-<pre><code class="javascript">plugins: [
-    ...
-        new HtmlWebpackPlugin({
-        template: 'src/name.html',
-        inject: 'body',
-        filename: 'name.html'
-        }),
-    ...
-],
-</code></pre>
-
-<ul>
-<li>Add images to your <code>src/assets</code> folder.</li>
+</li>
+<li>
+<p>Add images to your <code>src/assets</code> folder.</p>
+</li>
 <li>Add sass (SCSS) files to <code>src/scss</code> folder.</li>
 <li>Make sure you import the scss file in <code>main.scss</code> </li>
 </ul>
 <pre><code class="sass">    @import &quot;filename&quot;;
 </code></pre>
 
+<h2 id="official-github-repository">Official GitHub Repository</h2>
+<p>To view this starter's official GitHub repository and source code, just click <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate">here</a>. </p>
+<p>We're always open to pull requests and issues, so don't hesitate to open PRs or issues. </p>
 <h1 id="licence">Licence</h1>
 <p>Code released under the <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">MIT License</a>.</p></div>
         </div>
@@ -223,5 +238,5 @@ experiment with the changes live.)</li>
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2018-10-03 05:30:39
+Build Date UTC : 2018-12-03 17:22:23
 -->

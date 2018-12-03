@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
         
-        
-        
-        <link rel="shortcut icon" href="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/img/favicon.ico">
+        <link rel="canonical" href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/docs/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Webpack Sass Bootstrap Starter</title>
-        <link href="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/css/base.css" rel="stylesheet">
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,13 +19,13 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body>
+    <body class="homepage">
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/.">Webpack Sass Bootstrap Starter</a>
+                    <a class="navbar-brand" href="..">Webpack Sass Bootstrap Starter</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,7 +47,7 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/.">Home</a>
+                                <a href="..">Home</a>
                             </li>
                             <li >
                                 <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate">View on GitHub</a>
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                             <li>
-                                <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/edit/master/docs/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -69,15 +69,89 @@
         </div>
 
         <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#webpack-sass-bootstrap-starter">Webpack Sass Bootstrap Starter</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#getting-started">Getting Started</a></li>
+        <li class="main "><a href="#licence">Licence</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
+<h1 id="webpack-sass-bootstrap-starter">Webpack Sass Bootstrap Starter</h1>
+<p>This Webpack Sass Bootstrap boilerplate starter contains the features and scripts you need to get started quickly with Webpack bundling and building, Live Loading, and creating a dev server.</p>
+<p>It contains the following features:</p>
+<ul>
+<li>Webpack 4 bundling</li>
+<li>Babel ES6 Compiler</li>
+<li>Sass Compiler</li>
+<li>Bootstrap v4</li>
+<li>jQuery 3.3.1</li>
+<li>Popper.js </li>
+<li>Webpack Dev Server</li>
+</ul>
+<h2 id="features">Features</h2>
+<h3 id="webpack-loaders">Webpack Loaders</h3>
+<p>This starter contains the following webpack loaders:</p>
+<ul>
+<li>Sass Loader for compiling sass (SCSS)</li>
+<li>File Loader for loading asset files</li>
+<li>HTML Loader for loading HTML files</li>
+<li>Babel Loader for compiling ES6 code</li>
+</ul>
+<h3 id="webpack-plugins">Webpack Plugins</h3>
+<p>The following webpack plugins are also included:</p>
+<ul>
+<li>Extract Text Plugin for extracting CSS files</li>
+<li>Clean Webpack Plugin for cleaning unwanted files in dist directory</li>
+<li>HTML Webpack Plugin for generating HTML files</li>
+<li>Webpack Provider Plugin for providing jQuery &amp; popper js to Bootstrap</li>
+<li>Glob for matching HTML files</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>Please make sure you have NodeJS installed, as this contains <code>npm</code>, which is necessary
+for installing dependencies, starting the appropriate scripts, and building your web project.</li>
+</ul>
+<h3 id="quick-start">Quick Start</h3>
+<p>Clone the repo:</p>
+<pre><code>git clone https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate.git
+</code></pre>
+<p>Navigate to the project folder:</p>
+<pre><code>cd webpack-sass-bootstrap-boilerplate
+</code></pre>
+<p>Install all packages and dependencies required for this project:</p>
+<pre><code>npm install
+</code></pre>
+<p>Start the development environment (then, navigate to http://localhost:8080):</p>
+<pre><code>npm start
+</code></pre>
+<p>Then, open a browser and navigate to: http://localhost:8080/ </p>
+<p>Building files can be done as follows:</p>
+<pre><code>npm run build
+</code></pre>
+<h3 id="how-to-use">How To Use</h3>
+<ul>
+<li>
+<p>Add your HTML files by inserting or including them in the <code>src</code> directory (By default <code>index.html</code> is added to your <code>src</code> directory, feel free to edit it and 
+experiment with the changes live.)</p>
+<ul>
+<li>Make sure you restart development server after adding new HTML files</li>
+</ul>
+</li>
+<li>
+<p>Add images to your <code>src/assets</code> folder.</p>
+</li>
+<li>Add sass (SCSS) files to <code>src/scss</code> folder.</li>
+<li>Make sure you import the scss file in <code>main.scss</code> </li>
+</ul>
+<pre><code class="sass">    @import &quot;filename&quot;;
+</code></pre>
 
-
+<h1 id="licence">Licence</h1>
+<p>Code released under the <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">MIT License</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -85,11 +159,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/shaminmeerankutty/webpack-sass-bootstrap-boilerplate",
+            var base_url = "..",
                 shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
-        <script src="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/js/base.js" defer></script>
-        <script src="/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -157,3 +231,8 @@
 
     </body>
 </html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2018-12-03 17:22:23
+-->
