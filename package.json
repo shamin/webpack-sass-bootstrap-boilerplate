@@ -15,6 +15,7 @@
     "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^0.1.19",
+    "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
@@ -23,8 +24,10 @@
     "mini-css-extract-plugin": "^0.4.4",
     "node-glob": "^1.2.0",
     "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
