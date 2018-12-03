@@ -1,6 +1,9 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 const globSync = require("glob").sync;
@@ -24,7 +27,7 @@ module.exports = (env, options) => ({
         ]
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
             loader: "file-loader",
@@ -77,6 +80,20 @@ module.exports = (env, options) => ({
       Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
     })
   ],
+  optimization: {
+    minimizer: [
+        new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            sourceMap: false,
+            extractComments: false
+        }),
+        new CompressionPlugin({
+            test: /\.js$|\.css(\?.*)?$/i
+        }),
+        new OptimizeCSSAssetsPlugin({})
+    ]
+  },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
