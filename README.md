@@ -5,7 +5,7 @@
   <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
     <img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
   <a href="https://webpack.js.org">
-    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.25.1-0072b8.svg"></a>
+    <img alt="Webpack" src="https://img.shields.io/badge/webpack-v4.27.0-0072b8.svg"></a>
   <a href="http://getbootstrap.com/">
     <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-v4.1.3-563d7c.svg"></a>
   <a href="https://sass-lang.com">
