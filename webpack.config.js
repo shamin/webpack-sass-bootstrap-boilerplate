@@ -14,6 +14,9 @@ module.exports = (env, options) => ({
     contentBase: "./dist"
   },
   devtool: "source-map",
+  node: {
+    fs: 'empty'
+  },
   module: {
     rules: [
       {
