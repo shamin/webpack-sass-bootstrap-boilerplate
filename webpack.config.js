@@ -24,7 +24,12 @@ module.exports = (env, options) => ({
         use: [
           options.mode !== "production"
             ? "style-loader"
-            : MiniCssExtractPlugin.loader,
+            : {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  publicPath: "../"
+                }
+              },
           "css-loader",
           {
             loader: 'postcss-loader', 
