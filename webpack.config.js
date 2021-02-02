@@ -1,9 +1,9 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CompressionPlugin = require('compression-webpack-plugin');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 const globSync = require("glob").sync;
@@ -11,12 +11,9 @@ const globSync = require("glob").sync;
 module.exports = (env, options) => ({
   entry: ["./src/index.js"],
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./dist",
   },
   devtool: "source-map",
-  node: {
-    fs: 'empty'
-  },
   module: {
     rules: [
       {
@@ -27,44 +24,20 @@ module.exports = (env, options) => ({
             : {
                 loader: MiniCssExtractPlugin.loader,
                 options: {
-                  publicPath: "../"
-                }
+                  publicPath: "../",
+                },
               },
           "css-loader",
           {
-            loader: 'postcss-loader', 
+            loader: "postcss-loader",
             options: {
-              plugins: function () {
-                return [
-                  require('precss'),
-                  require('autoprefixer')
-                ];
-              }
-            }
+              postcssOptions: {
+                plugins: [["autoprefixer"]],
+              },
+            },
           },
-          "sass-loader"
-        ]
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "img/"
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: "html-srcsets-loader",
-          options: {
-            attrs: [":src", ':srcset']
-          }
-        }
+          "sass-loader",
+        ],
       },
       {
         test: /\.js$/,
@@ -72,22 +45,30 @@ module.exports = (env, options) => ({
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
-      }
-    ]
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].[contenthash].css"
+      filename: "css/[name].[contenthash].css",
     }),
-    new CleanWebpackPlugin(["dist"]),
-    ...globSync("src/**/*.html").map(fileName => {
+    new CleanWebpackPlugin(),
+    ...globSync("src/**/*.html").map((fileName) => {
       return new HtmlWebpackPlugin({
         template: fileName,
         inject: "body",
-        filename: fileName.replace("src/", "")
+        filename: fileName.replace("src/", ""),
       });
     }),
     new webpack.ProvidePlugin({
@@ -96,26 +77,22 @@ module.exports = (env, options) => ({
       "window.jQuery": "jquery",
       Popper: ["popper.js", "default"],
       Util: "exports-loader?Util!bootstrap/js/dist/util",
-      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
-    })
+      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
+    }),
   ],
   optimization: {
+    minimize: true,
     minimizer: [
-        new UglifyJsPlugin({
-            cache: true,
-            parallel: true,
-            sourceMap: false,
-            extractComments: false
-        }),
-        new CompressionPlugin({
-            test: /\.js$|\.css(\?.*)?$/i
-        }),
-        new OptimizeCSSAssetsPlugin({})
-    ]
+      new TerserPlugin(),
+      new CompressionPlugin({
+        test: /\.js$|\.css(\?.*)?$/i,
+      }),
+      new CssMinimizerPlugin(),
+    ],
   },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: ""
-  }
+    publicPath: "",
+  },
 });
