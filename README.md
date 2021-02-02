@@ -23,7 +23,7 @@
   · Bootstrap
   · Webpack
   · Webpack Dev Server
-  · jQuery 3.3.1
+  · jQuery 3.5.1
   · Popper.js 
   </em>
 </p>
@@ -33,11 +33,11 @@ to get started quickly with Webpack bundling and building, Live Loading,gzip-com
 
 It contains the following features:
 
-- Webpack 4 bundling
+- Webpack 5 bundling
 - Babel ES6 Compiler
 - Sass Compiler
 - Bootstrap v4
-- jQuery 3.3.1
+- jQuery 3.5.1
 - Popper.js 
 - Webpack Dev Server
 - Generates `gzip` of both css and js files  
